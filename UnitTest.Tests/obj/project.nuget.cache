@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WTmWspAJTSKLlpF6Ows8jeV93rTQqbSLjCYNJNNJSLHoUtZg02a4OSFa7ERCvbCrIHp4IqeTej/P7Cst7e73tw==",
+  "dgSpecHash": "hupFAIw2JKV+cF135Z44PyZPl+JGefCM0yk2IDIDAqUTKC7nO68pNb1khTLa1I/edeOqKz0Ra3r/IzPzcY1+7g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\spantvaidya\\Projects\\UnitTesting\\UnitTests\\Calculations.Tests\\UnitTest.Tests.csproj",
+  "projectFilePath": "C:\\Users\\spantvaidya\\Projects\\UnitTesting\\UnitTests\\UnitTest.Tests\\UnitTest.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\spantvaidya\\.nuget\\packages\\microsoft.codecoverage\\17.12.0\\microsoft.codecoverage.17.12.0.nupkg.sha512",
     "C:\\Users\\spantvaidya\\.nuget\\packages\\microsoft.net.test.sdk\\17.12.0\\microsoft.net.test.sdk.17.12.0.nupkg.sha512",
