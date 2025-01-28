@@ -1,11 +1,11 @@
 C:\Users\spantvaidya\Projects\UnitTesting\UnitTests\UnitTest.Tests\bin\Debug\net8.0\.msCoverageSourceRootsMapping_UnitTest.Tests
-C:\Users\spantvaidya\Projects\UnitTesting\UnitTests\UnitTest.Tests\bin\Debug\net8.0\testhost.exe
 C:\Users\spantvaidya\Projects\UnitTesting\UnitTests\UnitTest.Tests\bin\Debug\net8.0\testhost.dll
 C:\Users\spantvaidya\Projects\UnitTesting\UnitTests\UnitTest.Tests\bin\Debug\net8.0\xunit.abstractions.dll
-C:\Users\spantvaidya\Projects\UnitTesting\UnitTests\UnitTest.Tests\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
 C:\Users\spantvaidya\Projects\UnitTesting\UnitTests\UnitTest.Tests\bin\Debug\net8.0\UnitTest.deps.json
 C:\Users\spantvaidya\Projects\UnitTesting\UnitTests\UnitTest.Tests\bin\Debug\net8.0\UnitTest.runtimeconfig.json
 C:\Users\spantvaidya\Projects\UnitTesting\UnitTests\UnitTest.Tests\bin\Debug\net8.0\UnitTest.exe
+C:\Users\spantvaidya\Projects\UnitTesting\UnitTests\UnitTest.Tests\bin\Debug\net8.0\testhost.exe
+C:\Users\spantvaidya\Projects\UnitTesting\UnitTests\UnitTest.Tests\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
 C:\Users\spantvaidya\Projects\UnitTesting\UnitTests\UnitTest.Tests\bin\Debug\net8.0\UnitTest.Tests.deps.json
 C:\Users\spantvaidya\Projects\UnitTesting\UnitTests\UnitTest.Tests\bin\Debug\net8.0\UnitTest.Tests.runtimeconfig.json
 C:\Users\spantvaidya\Projects\UnitTesting\UnitTests\UnitTest.Tests\bin\Debug\net8.0\UnitTest.Tests.dll
