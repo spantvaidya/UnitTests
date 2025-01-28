@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace Calculations.Tests
+namespace UnitTest.Tests
 {
     public class CalculatorTest
     {

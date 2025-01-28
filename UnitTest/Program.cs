@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using Calculations;
+using UnitTest;
 
 Console.WriteLine("Hello, World!");
 
