@@ -11,6 +11,7 @@ namespace UnitTest.Tests
     {
         //Asserting String Values
         [Fact]
+        [Trait("Category", "Name")]
         public void MakeFUllNamesTest()
         {
             var names = new Names();
@@ -20,7 +21,8 @@ namespace UnitTest.Tests
         }
 
         //Asserting boolean values
-        [Fact] 
+        [Fact]
+        [Trait("Category", "Name")]
         public void NickName_MustbeNull()
         {
             var names = new Names();
@@ -29,6 +31,7 @@ namespace UnitTest.Tests
         }
 
         [Fact]
+        [Trait("Category", "Name")]
         public void NickName_NotNull()
         {
             var names = new Names();
@@ -37,6 +40,7 @@ namespace UnitTest.Tests
         }
 
         [Fact]
+        [Trait("Category", "Name")]
         public void NickName_AlwaysReturnsValue()
         {
             var names = new Names();
