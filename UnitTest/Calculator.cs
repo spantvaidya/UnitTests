@@ -1,4 +1,4 @@
-﻿namespace Calculations
+﻿namespace UnitTest
 {
     public class Calculator
     {
