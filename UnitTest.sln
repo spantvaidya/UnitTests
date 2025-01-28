@@ -7,6 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTest", "UnitTest\UnitTe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTest.Tests", "UnitTest.Tests\UnitTest.Tests.csproj", "{F17674B2-A938-44A3-A68D-480537DF7441}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Document", "Document", "{5F976F17-925D-4554-A8F4-96F292F02B53}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Documents\Sameer\Courses&Certs\UnitTesting\UnitTesting.docx = ..\..\..\Documents\Sameer\Courses&Certs\UnitTesting\UnitTesting.docx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
