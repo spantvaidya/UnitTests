@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\spantvaidya\\Projects\\UnitTesting\\UnitTests\\Calculations\\UnitTest.csproj",
+      "projectUniqueName": "C:\\Users\\spantvaidya\\Projects\\UnitTesting\\UnitTests\\UnitTest\\UnitTest.csproj",
       "projectName": "UnitTest",
-      "projectPath": "C:\\Users\\spantvaidya\\Projects\\UnitTesting\\UnitTests\\Calculations\\UnitTest.csproj",
+      "projectPath": "C:\\Users\\spantvaidya\\Projects\\UnitTesting\\UnitTests\\UnitTest\\UnitTest.csproj",
       "packagesPath": "C:\\Users\\spantvaidya\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\spantvaidya\\Projects\\UnitTesting\\UnitTests\\Calculations\\obj\\",
+      "outputPath": "C:\\Users\\spantvaidya\\Projects\\UnitTesting\\UnitTests\\UnitTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
