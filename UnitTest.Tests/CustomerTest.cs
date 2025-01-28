@@ -6,6 +6,7 @@ namespace UnitTest.Tests
     {
         //Asserting Exception
         [Fact]
+        [Trait("Category", "Customer")]
         public void GetCusotmerByNameNotNull()
         {
             var customer = new Customer();
@@ -15,6 +16,7 @@ namespace UnitTest.Tests
         }
 
         [Fact]
+        [Trait("Category", "Customer")]
         public void LoyalCustomerForOrderGreater100()
         {
             var customer = CustomerFactory.CreateCustomerInstance(101);

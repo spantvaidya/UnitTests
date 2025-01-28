@@ -22,6 +22,7 @@ namespace UnitTest.Tests
         }
 
         [Fact]
+        [Trait("Category","Fibo")]
         public void FiboDoesNotIncludeZero()
         {
             Calculator calculator = new Calculator();
@@ -29,6 +30,7 @@ namespace UnitTest.Tests
         }
 
         [Fact]
+        [Trait("Category", "Fibo")]
         public void FiboIncludes13()
         {
             Calculator calculator = new Calculator();
@@ -36,6 +38,7 @@ namespace UnitTest.Tests
         }
 
         [Fact]
+        [Trait("Category", "Fibo")]
         public void FiboDoesNotInclude4()
         {
             Calculator calculator = new Calculator();
@@ -43,6 +46,7 @@ namespace UnitTest.Tests
         }
 
         [Fact]
+        [Trait("Category", "Fibo")]
         public void CheckCollection()
         {
             List<int> list = new List<int> { 1, 1, 2, 3, 5, 8, 13 };
