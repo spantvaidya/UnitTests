@@ -2,13 +2,23 @@
 
 namespace UnitTest.Tests
 {
-    public class CalculatorTest
+    public class CalculatorFixture //Fixture Class to Reuse Calc class
     {
+        public Calculator Calc => new Calculator();
+    }
+    public class CalculatorTest : IClassFixture<CalculatorFixture>
+    {
+        private readonly CalculatorFixture _calculatorfixture;
+
+        public CalculatorTest(CalculatorFixture calculatorfixture)
+        {
+            _calculatorfixture = calculatorfixture;
+        }
         //Asserting Numeric Values
         [Fact]
         public void TestAdd_ReturnsInt()
         {
-            Calculator calculator = new Calculator();
+            Calculator calculator = _calculatorfixture.Calc;
             var result = calculator.Add(1, 2);
             Assert.Equal(3, result);
         }
@@ -16,7 +26,7 @@ namespace UnitTest.Tests
         [Fact]
         public void TestAddDouble_ReturnsDouble()
         {
-            Calculator calculator = new Calculator();
+            Calculator calculator = _calculatorfixture.Calc;
             var result = calculator.AddDouble(1.4, 2.8);
             Assert.Equal(4.2, result, 1);
         }
@@ -25,7 +35,7 @@ namespace UnitTest.Tests
         [Trait("Category","Fibo")]
         public void FiboDoesNotIncludeZero()
         {
-            Calculator calculator = new Calculator();
+            Calculator calculator = _calculatorfixture.Calc;
             Assert.All(calculator.FiboNumbers, n => Assert.NotEqual(0, n));
         }
 
@@ -33,7 +43,7 @@ namespace UnitTest.Tests
         [Trait("Category", "Fibo")]
         public void FiboIncludes13()
         {
-            Calculator calculator = new Calculator();
+            Calculator calculator = _calculatorfixture.Calc;
             Assert.Contains(13,calculator.FiboNumbers);
         }
 
@@ -41,7 +51,7 @@ namespace UnitTest.Tests
         [Trait("Category", "Fibo")]
         public void FiboDoesNotInclude4()
         {
-            Calculator calculator = new Calculator();
+            Calculator calculator = _calculatorfixture.Calc;
             Assert.DoesNotContain(4, calculator.FiboNumbers);
         }
 
@@ -50,7 +60,7 @@ namespace UnitTest.Tests
         public void CheckCollection()
         {
             List<int> list = new List<int> { 1, 1, 2, 3, 5, 8, 13 };
-            Calculator calculations = new Calculator();
+            Calculator calculations = _calculatorfixture.Calc;
             Assert.Equal(list,calculations.FiboNumbers);
         }
     }
