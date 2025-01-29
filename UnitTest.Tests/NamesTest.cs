@@ -1,20 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xunit;
+﻿using Xunit;
 
 namespace UnitTest.Tests
 {
-    public class NamesTest
+    public class NameFixture
     {
+        public Names Names => new Names();
+    }
+    public class NamesTest : IClassFixture<NameFixture>
+    {
+        private readonly NameFixture _namesfixture;
+        public NamesTest(NameFixture namesfixture)
+        {
+            _namesfixture = namesfixture;
+        }
         //Asserting String Values
         [Fact]
         [Trait("Category", "Name")]
         public void MakeFUllNamesTest()
         {
-            var names = new Names();
+            var names = _namesfixture.Names;
             var result = names.MakeFullNames("Sam", "Pant");
             //Assert.Equal("Sam Pant", result);
             Assert.Matches("[A-Z]{1}[a-z]+ [A-Z]{1}[a-z]+",result);
@@ -25,7 +29,7 @@ namespace UnitTest.Tests
         [Trait("Category", "Name")]
         public void NickName_MustbeNull()
         {
-            var names = new Names();
+            var names = _namesfixture.Names;
             var result = names.NickName;
             Assert.Null(result);
         }
@@ -34,7 +38,7 @@ namespace UnitTest.Tests
         [Trait("Category", "Name")]
         public void NickName_NotNull()
         {
-            var names = new Names();
+            var names = _namesfixture.Names;
             var result = names.NickName = "Sam";
             Assert.NotNull(result);
         }
@@ -43,7 +47,7 @@ namespace UnitTest.Tests
         [Trait("Category", "Name")]
         public void NickName_AlwaysReturnsValue()
         {
-            var names = new Names();
+            var names = _namesfixture.Names;
             var result = names.MakeFullNames("Sam", "Pantvaidya");
             Assert.NotNull(result);
             Assert.False(String.IsNullOrEmpty(result));

@@ -2,14 +2,23 @@
 
 namespace UnitTest.Tests
 {
-    public class CustomerTest
+    public class CustomerFixture
     {
+        public Customer Customer => new Customer();
+    }
+    public class CustomerTest : IClassFixture<CustomerFixture>
+    {
+        private readonly CustomerFixture _customerfixture;
+        public CustomerTest(CustomerFixture customerfixture)
+        {
+            _customerfixture = customerfixture;
+        }
         //Asserting Exception
         [Fact]
         [Trait("Category", "Customer")]
         public void GetCusotmerByNameNotNull()
         {
-            var customer = new Customer();
+            var customer = _customerfixture.Customer;
             var exceptiondetails = Assert.Throws<ArgumentException>(
                 () => customer.GetCustomerByName(""));
             Assert.Equal("Hello", exceptiondetails.Message);
