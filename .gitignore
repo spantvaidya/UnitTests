@@ -40,13 +40,6 @@ bld/
 # Visual Studio 2017 auto generated files
 Generated\ Files/
 
-# Ignore Visual Studio 2022 specific files
-.vs/
-
-# Ignore build outputs
-bin/
-obj/
-
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
