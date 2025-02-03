@@ -63,5 +63,17 @@ namespace UnitTest.Tests
             Calculator calculations = _calculatorfixture.Calc;
             Assert.Equal(list,calculations.FiboNumbers);
         }
+
+        //Passing Parameters with inline attribute
+        [Theory]
+        //[InlineData(1, true)]
+        //[InlineData(10, false)]
+        [IsOddEvenData]
+        public void IsOdd_TestOddAndEven(int value, bool expected)
+        {
+            Calculator calculator = _calculatorfixture.Calc;
+            var result = calculator.IsOdd(value);
+            Assert.Equal(expected,result);
+        }
     }
 }
